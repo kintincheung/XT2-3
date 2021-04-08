@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+<!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Space X </title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column1">
+        <img class="logo" src="img/spacex-logo.png" />
+        <div id="geocoder" class="geocoder"></div>
+        <p class="information">
+          <strong>Locatie: </strong><span id="country"></span> <br />
+          <strong>Weeromstandigheden: </strong><span id="weather"></span><br />
+          <strong>Temperatuur: </strong><span id="temp"></span><br />
+          <strong>Luchtvochtigheid: </strong><span id="humidity"></span><br />
+          <strong>Wind: </strong><span id="wind"></span><br />
+          <strong>Windrichting: </strong><span id="winddeg"></span><br />
+          <img id="weericon" src=" " />
+        </p>
+      </div>
+      <div class="column2">
+        <div id="map"></div>
+      </div>
+
+     </div>
+     <script src="js/scripts.js"> </script>
+  </body>
+</html>
